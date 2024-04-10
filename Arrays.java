@@ -9,17 +9,17 @@ public class Arrays {
 
 		 Scanner scanner = new Scanner(System.in);
 
-	        // Declarar el arreglo para almacenar 3 números reales
-	        double[] numeros = new double[3];
+	       // Declarar el arreglo para almacenar 3 números enteros
+	        int[] numeros = new int[3];
 
 	        // Recorrer el arreglo y pedir al usuario que ingrese cada número
 	        for (int i = 0; i < numeros.length; i++) {
 	            System.out.print("Ingrese el número " + (i + 1) + ": ");
-	            numeros[i] = scanner.nextDouble();
+	            numeros[i] = scanner.nextInt();
 	        }
 
 	        // Encontrar el mayor elemento en el arreglo
-	        double mayor = numeros[0];
+	        int mayor = numeros[0];
 	        for (int i = 1; i < numeros.length; i++) {
 	            if (numeros[i] > mayor) {
 	                mayor = numeros[i];
@@ -31,7 +31,6 @@ public class Arrays {
 
 	        scanner.close();
 	    }
-	
 	}
 
 
